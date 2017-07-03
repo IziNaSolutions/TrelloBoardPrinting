@@ -1,5 +1,17 @@
+<!--<div class="jumbotron">-->
+
+  <!--<a href="#/cards">the data</a>-->
 <div class="jumbotron">
-
-    <a href="#/cards">the data</a>
-
+  <form class="form" ng-submit="main.submit()">
+    <div class="form-group">
+      <label for="inputUrl">Trello Board JSON URL</label>
+      <input type="text" class="form-control" id="inputUrl" placeholder="https://trello.com/b/zky1cN7d.json" ng-model="main.input.url">
+    </div>
+    <div class="form-group">
+      <label for="inputCookie">Auth Cookie (taken from http request)</label>
+      <input type="text" class="form-control" id="inputCookie" placeholder="only for not 'public'" ng-model="main.input.cookie">
+    </div>
+    <button type="submit" class="btn btn-default">Print</button>
+  </form>
 </div>
+<!--</div>-->
