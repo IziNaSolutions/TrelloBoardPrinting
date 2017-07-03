@@ -1,0 +1,10 @@
+<div>
+
+    <h1><span class="label label-primary">{{self.data.name}}</span></h1>
+
+    <div ng-repeat="card in self.data.cards">
+        <span class="label label-default">{{card.name}}</span>
+        <div class="container" ng-bind-html="card.desc | markdown"></div>
+    </div>
+
+</div>
